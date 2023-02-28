@@ -1,0 +1,23 @@
+{
+  "name": "loans-application-",
+  "version": "1.0.0",
+  "description": "Project Code : https://github.com/Sharuf95/loans-application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sharuf95/loans-application-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sharuf95/loans-application-/issues"
+  },
+  "homepage": "https://github.com/Sharuf95/loans-application-#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}
