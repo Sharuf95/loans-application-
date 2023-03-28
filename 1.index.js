@@ -197,7 +197,22 @@ if (!lastName) {
 
 
 
-  
+  app.delete("/loans/:id", (request,response) => {
+   const loan_id = request.params.id;
+     const sql = `DELETE from loans WHERE loan_id = ${loan_id}`;
+       db.serialize(() => {
+         db.exec(sql, (error) => {
+          if (error) {
+            return Send_Error_Message (response,"Can't delete the loan")
+             }else {
+               response.json ({
+                status   : true,
+                 message : "Loan deleted.."
+                 })
+               }
+             })
+          })
+        })
      
  
                   
